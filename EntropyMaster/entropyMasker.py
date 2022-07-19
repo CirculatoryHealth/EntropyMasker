@@ -20,7 +20,7 @@ parser.add_argument("-i","--input_path", type=str,
                     help="type input path", required = True)
 parser.add_argument("-o", "--output_path", type=str,
                     help="type output path", required = True)
-args = parser.parse_args()
+
 
 def filter_entropy_image(image, filter, disk_radius:int = 3):
 	
@@ -36,7 +36,8 @@ def filter_entropy_image(image, filter, disk_radius:int = 3):
 
 
 def main():
-	
+
+    args = parser.parse_args()
     ORO = cv2.imread(args.input_path,0)
     source = deepcopy(ORO)
     ent = entropy(source, disk(5))
