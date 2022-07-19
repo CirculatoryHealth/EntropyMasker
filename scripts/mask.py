@@ -32,7 +32,6 @@ def filter_entropy_image(image, filter, disk_radius:int = 3):
 				new_picture[rn,pn] = True
 			else:
 				new_picture[rn,pn] = False
-	
 	return new_picture.astype('b')
 
 
