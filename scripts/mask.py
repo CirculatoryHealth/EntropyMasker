@@ -53,6 +53,14 @@ import timeit
 import cmapy
 import argparse
 
+
+parser = argparse.ArgumentParser(description='Masking some images')
+parser.add_argument("-i","--input_path", type=str,
+                    help="type input path", required = True)
+parser.add_argument("-o", "--output_path", type=str,
+                    help="type output path", required = True)
+args = parser.parse_args()
+
 def filter_entropy_image(image, filter, disk_radius:int = 3):
 	
 	eimage = entropy(image, disk(disk_radius))
@@ -68,35 +76,28 @@ def filter_entropy_image(image, filter, disk_radius:int = 3):
 	return new_picture.astype('b')
 
 
-parser = argparse.ArgumentParser(description='Masking some images')
-parser.add_argument("-i","--input_path", type=str,
-                    help="type input path", required = True)
-parser.add_argument("-o", "--output_path", type=str,
-                    help="type output path", required = True)
-args = parser.parse_args()
+def main():
+	
+	ORO = cv2.imread(args.input_path,0)
+	source = deepcopy(ORO)
 
+	ent = entropy(source, disk(5))
 
+	hist = list(np.histogram(ent,30))
 
+	minindex = list(argrelextrema(hist[0], np.less))
 
+	for i in range(len(minindex[0])):
+	    temp_thresh = hist[1][minindex[0][i]]
+	    if temp_thresh>1 and temp_thresh<4:
+		thresh_localminimal = temp_thresh
 
-ORO = cv2.imread(args.input_path,0)
-source = deepcopy(ORO)
+	thresh1 = (255*filter_entropy_image(ORO, thresh_localminimal)).astype('uint8')
 
-ent = entropy(source, disk(5))
+	mask_255 = cv2.bitwise_not(deepcopy(thresh1))
+	cv2.imwrite(args.output_path, mask_255)
 
-hist = list(np.histogram(ent,30))
-
-minindex = list(argrelextrema(hist[0], np.less))
-
-for i in range(len(minindex[0])):
-    temp_thresh = hist[1][minindex[0][i]]
-    if temp_thresh>1 and temp_thresh<4:
-        thresh_localminimal = temp_thresh
-      
-thresh1 = (255*filter_entropy_image(ORO, thresh_localminimal)).astype('uint8')
-
-mask_255 = cv2.bitwise_not(deepcopy(thresh1))
-
-
-cv2.imwrite(args.output_path, mask_255)
+	
+if __name__ == "__main__":
+	main()
 
