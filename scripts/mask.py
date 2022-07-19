@@ -26,7 +26,6 @@ def filter_entropy_image(image, filter, disk_radius:int = 3):
 	
 	eimage = entropy(image, disk(disk_radius))
 	new_picture =  np.ndarray(shape=eimage.shape) #[[False] * image.shape[1]] * image.shape[0]
-	
 	for rn, row in enumerate(eimage):
 		for pn, pixel in enumerate(row):
 			if pixel < filter:
