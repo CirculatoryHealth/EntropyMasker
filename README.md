@@ -6,7 +6,7 @@
 
 You can load this project in RStudio by opening the file called 'EntropyMasker.Rproj'.
 
-Or you can use this project in command line with `python mask.py --input_path --output_path` with python3 installed. 
+Or you can use this project in command line with `python EntropyMaster/entropyMasker.py --input_path --output_path` with python3 installed. 
 
 ## Project structure
 
