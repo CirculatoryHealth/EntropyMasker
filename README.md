@@ -40,9 +40,9 @@ _Description of commands._
 
 ### Questions and issues
 
-Do you have burning questions or do you want to discuss usage with other users? Please use the Discussions tab.
+<!-- Do you have burning questions or do you want to discuss usage with other users? Please use the Discussions tab.-->
 
-Do you want to report an issue? Or do you have an idea for improvement or adding new features to our method and tool? Please use the [Issues tab](https://github.com/CirculatoryHealth/EntropyMasker/issues).
+Do you have burning questions or do you want to discuss usage with other users? Do you want to report an issue? Or do you have an idea for improvement or adding new features to our method and tool? Please use the [Issues tab](https://github.com/CirculatoryHealth/EntropyMasker/issues).
 
 
 ### Citations
