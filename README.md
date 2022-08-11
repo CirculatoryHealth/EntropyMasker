@@ -37,13 +37,15 @@ _Description of commands._
 | notebook            | Jupyter notebook for this project         | Human editable              |
 | scripts             | QuPath scripts used for this project      | Human editable              |
 
+
 ### Questions and issues
 
 Do you have burning questions or do you want to discuss usage with other users? Please use the Discussions tab.
 
 Do you want to report an issue? Or do you have an idea for improvement or adding new features to our method and tool? Please use the [Issues tab](https://github.com/CirculatoryHealth/EntropyMasker/issues).
 
-## Citations
+
+### Citations
 
 Using our **`EntropyMasker`** method? Please cite our work:
 
@@ -51,11 +53,13 @@ Using our **`EntropyMasker`** method? Please cite our work:
     Yipei Song, Francesco Cisternino, Joost Mekke, Gert Jan de Borst, Dominique P.V. de Kleijn, Gerard Pasterkamp, Craig Glastonbury, Sander W. van der Laan, Clint L. Miller1.
     medRxiv 2022.05.02.22273844; doi: https://doi.org/10.1101/2022.05.02.22273844
 
-## Data availability
+
+### Data availability
 
 The whole-slide images used in this project are available through a [DataverseNL repository](https://doi.org/10.34894/QI135J "ExpressScan: Histological whole-slide image data from the Athero-Express (AE) and Aneurysm-Express (AAA) Biobank Studies"). There are restrictions on use by commercial parties, and on sharing openly based on (inter)national laws, regulations and the written informed consent. Therefore these data (and additional clinical data) are only available upon discussion and signing a Data Sharing Agreement (see Terms of Access) and within a specially designed UMC Utrecht provided environment.
 
-## Acknowledgements, disclosures, and funding
+
+### Acknowledgements, disclosures, and funding
 
 We are thankful for the support of the Netherlands CardioVascular Research Initiative of the Netherlands Heart Foundation (CVON 2011/B019 and CVON 2017-20: Generating the best evidence-based pharmaceutical targets for atherosclerosis [GENIUS I&II]), the ERA-CVD program 'druggable-MI-targets' (grant number: 01KL1802), and the Leducq Fondation 'PlaqOmics'.
 

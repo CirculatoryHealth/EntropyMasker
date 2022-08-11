@@ -368,7 +368,12 @@ pre code {
 <div id="entropymasker" class="section level2">
 <h2>EntropyMasker</h2>
 <!-- Please add a brief introduction to explain what the project is about    -->
-<p>[add in decription]</p>
+<p><strong><code>EntropyMasker</code></strong> is a fully automated
+approach for separating foreground (tissue) and background in
+bright-field microscopic whole-slide images of (immuno)histologically
+stained samples. This method is unaffected by changes in scanning or
+image processing conditions, by using a measure of local entropy and
+generating corresponding binary tissue masks.</p>
 <div id="where-do-i-start" class="section level3">
 <h3>Where do I start?</h3>
 <p><strong><code>EntropyMasker</code></strong> is dependent on
@@ -377,13 +382,12 @@ high-performance compute cluster (HPC). <!-- We created
 detailed instructions in the wiki to install the necessary
 `python`-libraries.--></p>
 <p>To run <code>EntropyMasker</code> run the following code:</p>
-<pre><code>python EntropyMaster/entropyMasker.py --input_path --output_path</code></pre>
-<p><code>--input_path</code> <code>--output_path</code></p>
+<pre><code>python EntropyMaster/entropyMasker.py --input_img --output_img</code></pre>
 <table>
 <colgroup>
-<col width="18%" />
-<col width="18%" />
-<col width="63%" />
+<col width="24%" />
+<col width="24%" />
+<col width="50%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -394,23 +398,28 @@ detailed instructions in the wiki to install the necessary
 </thead>
 <tbody>
 <tr class="odd">
-<td><code>--input_path</code></td>
+<td><code>-i/--input_img</code></td>
 <td>required</td>
-<td>complete path to the whole-slide images in bioimage format
-(<code>.TIF</code> and <code>.ndpi</code> are tested and work)</td>
+<td>complete path to the whole-slide image to mask</td>
 </tr>
 <tr class="even">
-<td><code>--output_path</code></td>
+<td><code>-o/--output_img</code></td>
 <td>required</td>
-<td>complete path to the output directory</td>
+<td>complete path to the masked output-image</td>
+</tr>
+<tr class="odd">
+<td><code>-h/--help</code></td>
+<td>optional</td>
+<td>to get a usage-description</td>
 </tr>
 </tbody>
 </table>
+<p><em>Description of commands.</em></p>
 </div>
 <div id="project-structure" class="section level3">
 <h3>Project structure</h3>
 <!--  You can add rows to this table, using "|" to separate columns.         -->
-<table style="width:100%;">
+<table>
 <colgroup>
 <col width="26%" />
 <col width="43%" />
@@ -440,7 +449,7 @@ detailed instructions in the wiki to install the necessary
 <td>Read only</td>
 </tr>
 <tr class="even">
-<td>EntropyMasker</td>
+<td>EntropyMaster</td>
 <td>The EntropyMasker program</td>
 <td>Human editable</td>
 </tr>
@@ -450,8 +459,13 @@ detailed instructions in the wiki to install the necessary
 <td>Human editable</td>
 </tr>
 <tr class="even">
+<td>notebook</td>
+<td>Jupyter notebook for this project</td>
+<td>Human editable</td>
+</tr>
+<tr class="odd">
 <td>scripts</td>
-<td>Scripts used for this project</td>
+<td>QuPath scripts used for this project</td>
 <td>Human editable</td>
 </tr>
 </tbody>
@@ -466,17 +480,16 @@ improvement or adding new features to our method and tool? Please use
 the <a href="https://github.com/CirculatoryHealth/EntropyMasker/issues">Issues
 tab</a>.</p>
 </div>
-</div>
-<div id="citations" class="section level2">
-<h2>Citations</h2>
+<div id="citations" class="section level3">
+<h3>Citations</h3>
 <p>Using our <strong><code>EntropyMasker</code></strong> method? Please
 cite our work:</p>
 <pre><code>An automatic entropy method to efficiently mask histology whole-slide images
 Yipei Song, Francesco Cisternino, Joost Mekke, Gert Jan de Borst, Dominique P.V. de Kleijn, Gerard Pasterkamp, Craig Glastonbury, Sander W. van der Laan, Clint L. Miller1.
 medRxiv 2022.05.02.22273844; doi: https://doi.org/10.1101/2022.05.02.22273844</code></pre>
 </div>
-<div id="data-availability" class="section level2">
-<h2>Data availability</h2>
+<div id="data-availability" class="section level3">
+<h3>Data availability</h3>
 <p>The whole-slide images used in this project are available through a
 <a href="https://doi.org/10.34894/QI135J" title="ExpressScan: Histological whole-slide image data from the Athero-Express (AE) and Aneurysm-Express (AAA) Biobank Studies">DataverseNL
 repository</a>. There are restrictions on use by commercial parties, and
@@ -486,8 +499,8 @@ data) are only available upon discussion and signing a Data Sharing
 Agreement (see Terms of Access) and within a specially designed UMC
 Utrecht provided environment.</p>
 </div>
-<div id="acknowledgements-disclosures-and-funding" class="section level2">
-<h2>Acknowledgements, disclosures, and funding</h2>
+<div id="acknowledgements-disclosures-and-funding" class="section level3">
+<h3>Acknowledgements, disclosures, and funding</h3>
 <p>We are thankful for the support of the Netherlands CardioVascular
 Research Initiative of the Netherlands Heart Foundation (CVON 2011/B019
 and CVON 2017-20: Generating the best evidence-based pharmaceutical
@@ -566,6 +579,7 @@ applicable exception or limitation. No warranties are given. The license
 may not give you all of the permissions necessary for your intended use.
 For example, other rights such as publicity, privacy, or moral rights
 may limit how you use the material.</p>
+</div>
 </div>
 </div>
 </div>
