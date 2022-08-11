@@ -32,7 +32,7 @@ _Description of commands._
 | README.md           | Description of project                    | Human editable              |
 | EntropyMasker.Rproj | R project file to generate this README.md | Loads R project; reads only |
 | LICENSE             | User permissions                          | Read only                   |
-| EntropyMasker       | The EntropyMasker program                 | Human editable              |
+| EntropyMaster       | The EntropyMasker program                 | Human editable              |
 | images              | Images used in this README.md             | Human editable              |
 | notebook            | Jupyter notebook for this project         | Human editable              |
 | scripts             | QuPath scripts used for this project      | Human editable              |
