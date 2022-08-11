@@ -50,7 +50,7 @@ Do you want to report an issue? Or do you have an idea for improvement or adding
 Using our **`EntropyMasker`** method? Please cite our work:
 
     An automatic entropy method to efficiently mask histology whole-slide images
-    Yipei Song, Francesco Cisternino, Joost Mekke, Gert Jan de Borst, Dominique P.V. de Kleijn, Gerard Pasterkamp, Craig Glastonbury, Sander W. van der Laan, Clint L. Miller1.
+    Yipei Song, Francesco Cisternino, Joost Mekke, Gert Jan de Borst, Dominique P.V. de Kleijn, Gerard Pasterkamp, Craig Glastonbury, Sander W. van der Laan, Clint L. Miller.
     medRxiv 2022.05.02.22273844; doi: https://doi.org/10.1101/2022.05.02.22273844
 
 
