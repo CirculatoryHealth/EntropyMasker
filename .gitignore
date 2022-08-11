@@ -68,7 +68,7 @@ out
 # Data
 *.sav
 *.sas7bdat
-data
+wsi
 #*.log
 
 # Temp files
