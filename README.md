@@ -20,7 +20,8 @@ To run `EntropyMasker` run the following code:
 | `-o/--output_img` | required          | complete path to the masked output-image       |
 | `-h/--help`       | optional          | to get a usage-description                     |
 
-: Description of commands.
+_Description of commands._
+
 
 ### Project structure
 
