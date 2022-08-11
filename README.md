@@ -1,9 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 ## EntropyMasker
 
 <!-- Please add a brief introduction to explain what the project is about    -->
@@ -19,14 +13,16 @@ detailed instructions in the wiki to install the necessary
 
 To run `EntropyMasker` run the following code:
 
-    python EntropyMaster/entropyMasker.py --input_path --output_path
+```
+python EntropyMaster/entropyMasker.py --input_img --output_img
+```
 
-`--input_path` `--output_path`
-
-| Flag            | Required/Optional | Description                                                                                         |
-|---------------|---------------|------------------------------------------|
-| `--input_path`  | required          | complete path to the whole-slide images in bioimage format (`.TIF` and `.ndpi` are tested and work) |
-| `--output_path` | required          | complete path to the output directory                                                               |
+Description of commands
+| Flag              | Required/Optional | Description                              |
+|-------------------|-------------------|------------------------------------------|
+| `-i/--input_img`  | required          | complete path to the whole-slide image to mask |
+| `-o/--output_img` | required          | complete path to the masked output-image       |
+| `-h/--help`       | optional          | to get a usage-description                     |
 
 ### Project structure
 
