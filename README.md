@@ -2,7 +2,7 @@
 
 <!-- Please add a brief introduction to explain what the project is about    -->
 
-[add in decription]
+**`EntropyMasker`** is a fully automated approach for separating foreground (tissue) and background in bright-field microscopic whole-slide images of (immuno)histologically stained samples. This method is unaffected by changes in scanning or image processing conditions, by using a measure of local entropy and generating corresponding binary tissue masks.
 
 ### Where do I start?
 
