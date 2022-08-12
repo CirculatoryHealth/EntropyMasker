@@ -1,0 +1,7 @@
+numpy==1.23.1
+opencv_contrib_python==4.6.0.66
+openslide_python==1.2.0
+Pillow==9.2.0
+scikit_image==0.19.3
+scipy==1.9.0
+skimage==0.0
