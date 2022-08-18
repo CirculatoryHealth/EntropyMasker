@@ -69,7 +69,7 @@ out
 *.sav
 *.sas7bdat
 wsi
-#*.log
+dataverse
 
 # Temp files
 _gsdata_/
