@@ -52,7 +52,6 @@ _... and load those packages._
 ```{r loading_packages, message=FALSE, warning=FALSE}
 source("scripts/pack01.packages.R")
 
-
 ```
 
 _We will create a datestamp and define the Utrecht Science Park Colour Scheme_.
@@ -1011,7 +1010,7 @@ cat("CREATE BASELINE TABLE\n")
 # Baseline table variables
 basetable_vars = c("Hospital", 
                    "Artery_summary",
-                   "Age", "Gender")
+                   "Age", "Gender",
                    # "ORyear", 
                    # "TC_finalCU", "LDL_finalCU", "HDL_finalCU", "TG_finalCU", 
                    # "TC_final", "LDL_final", "HDL_final", "TG_final", 
@@ -1033,7 +1032,8 @@ basetable_vars = c("Hospital",
                    # "IPH.bin", "VesselDensity_rankNorm",
                    # "Calc.bin", "Collagen.bin", 
                    # "Fat.bin_10", "Fat.bin_40", 
-                   # "OverallPlaquePhenotype", "Plaque_Vulnerability_Index")
+                   "OverallPlaquePhenotype" )
+                   # , "Plaque_Vulnerability_Index")
 
 basetable_bin = c("Hospital", 
                   "Artery_summary",
@@ -1183,8 +1183,8 @@ saveRDS(AEDB, file = paste0(OUT_loc, "/",Today,".",PROJECTNAME,".AEDB.raw.RDS"))
 
 ------------------------------------------------------------------------------------------------------------------------
 
-    Version:      v1.0.2
-    Last update:  2022-07-12
+    Version:      v1.0.3
+    Last update:  2022-08-23
     Written by:   Sander W. van der Laan (s.w.vanderlaan-2[at]umcutrecht.nl).
     Description:  Script to get some Athero-Express Biobank Study baseline characteristics.
     Minimum requirements: R version 3.4.3 (2017-06-30) -- 'Single Candle', Mac OS X El Capitan
@@ -1200,6 +1200,7 @@ saveRDS(AEDB, file = paste0(OUT_loc, "/",Today,".",PROJECTNAME,".AEDB.raw.RDS"))
     _W_
 
     **Changes log**
+    * v1.0.3 Updated baseline characteristics.
     * v1.0.2 Simplified the initial script. It now outputs the relevant R-objects (as .RDS).
     * v1.0.1 Update to main AEDB (there is an error in the Age-variable in the new version).
     * v1.0.0 Initial version. Add 'plaque vulnerability index', Fixed baseline table, added codes, and results. Major update to WORCS system.
