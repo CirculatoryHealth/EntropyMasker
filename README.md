@@ -1,4 +1,5 @@
 ## EntropyMasker
+[![DOI](https://zenodo.org/badge/488251271.svg)](https://zenodo.org/badge/latestdoi/488251271)
 
 <!-- Please add a brief introduction to explain what the project is about    -->
 Yipei Song<sup>1</sup>, Francesco Cisternino<sup>5</sup>, Joost Mekke<sup>2</sup>, Gert Jan de Borst<sup>2</sup>, Dominique P.V. de Kleijn<sup>2</sup>, Gerard Pasterkamp<sup>3</sup>, Aryan Vink<sup>4</sup>, Craig Glastonbury<sup>5</sup>, Sander W. van der Laan<sup>3\*</sup>, Clint L. Miller<sup>1\*</sup>. \* Authors contributed equally.
