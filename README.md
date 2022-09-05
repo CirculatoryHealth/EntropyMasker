@@ -108,10 +108,10 @@ Plaque samples are derived from arterial endarterectomies as part of the [Athero
 ##### Copyright (c) 2022. [Yipei Song](https://github.com/PetraSong) \| [Craig Glastonbury](https://github.com/GlastonburyC) \| [Sander W. van der Laan](https://github.com/swvanderlaan) \| [Clint L. Miller](https://github.com/clintmil).
 <sup>This is a human-readable summary of (and not a substitute for) the [license](LICENSE). You are free to: Share, copy and redistribute the material in any medium or format. The licencor cannot revoke these freedoms as long as you follow the license terms.</sup>
 
-<sup>Under the following terms:</br>
--   Attribution --- You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</br>
--   NonCommercial --- You may not use the material for commercial purposes.</br>
--   NoDerivatives --- If you remix, transform, or build upon the material, you may not distribute the modified material.</br>
--   No additional restrictions --- You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.</sup>
+<sup>Under the following terms:</br></sup>
+<sup>-   Attribution --- You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</br></sup>
+<sup>-   NonCommercial --- You may not use the material for commercial purposes.</br></sup>
+<sup>-   NoDerivatives --- If you remix, transform, or build upon the material, you may not distribute the modified material.</br></sup>
+<sup>-   No additional restrictions --- You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.</sup>
 
 <sup>Notices: You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation. No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.</sup>
