@@ -1,4 +1,5 @@
 ## EntropyMasker
+[![DOI](https://zenodo.org/badge/488251271.svg)](https://zenodo.org/badge/latestdoi/488251271)
 
 <!-- Please add a brief introduction to explain what the project is about    -->
 Yipei Song<sup>1</sup>, Francesco Cisternino<sup>5</sup>, Joost Mekke<sup>2</sup>, Gert Jan de Borst<sup>2</sup>, Dominique P.V. de Kleijn<sup>2</sup>, Gerard Pasterkamp<sup>3</sup>, Aryan Vink<sup>4</sup>, Craig Glastonbury<sup>5</sup>, Sander W. van der Laan<sup>3\*</sup>, Clint L. Miller<sup>1\*</sup>. \* Authors contributed equally.
@@ -70,7 +71,7 @@ Using our **`EntropyMasker`** method? Please cite our work:
 
     An automatic entropy method to efficiently mask histology whole-slide images
     Yipei Song, Francesco Cisternino, Joost Mekke, Gert Jan de Borst, Dominique P.V. de Kleijn, Gerard Pasterkamp, Aryan Vink, Craig Glastonbury, Sander W. van der Laan, Clint L. Miller.
-    medRxiv 2022.05.02.22273844; doi: https://doi.org/10.1101/2022.05.02.22273844
+    medRxiv 2022.09.01.22279487; doi: https://doi.org/10.1101/2022.09.01.22279487
 
 
 ### Data availability
@@ -94,10 +95,11 @@ Plaque samples are derived from arterial endarterectomies as part of the [Athero
 
 #### Changes log
 
-    Version:      v1.0.0</br>
-    Last update:  2022-08-018</br>
+    Version:      v1.0.1</br>
+    Last update:  2022-09-05</br>
     Written by:   Yipei Song; Craig Glastonbury; Sander W. van der Laan; Clint L. Miller.
         
+    * v1.0.1 Made public. Added citation to preprint. Fix in the readme.
     * v1.0.0 Initial version.  
 
 ------------------------------------------------------------------------
@@ -107,10 +109,10 @@ Plaque samples are derived from arterial endarterectomies as part of the [Athero
 ##### Copyright (c) 2022. [Yipei Song](https://github.com/PetraSong) \| [Craig Glastonbury](https://github.com/GlastonburyC) \| [Sander W. van der Laan](https://github.com/swvanderlaan) \| [Clint L. Miller](https://github.com/clintmil).
 <sup>This is a human-readable summary of (and not a substitute for) the [license](LICENSE). You are free to: Share, copy and redistribute the material in any medium or format. The licencor cannot revoke these freedoms as long as you follow the license terms.</sup>
 
-<sup>Under the following terms:</br>
--   Attribution --- You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</br>
--   NonCommercial --- You may not use the material for commercial purposes.</br>
--   NoDerivatives --- If you remix, transform, or build upon the material, you may not distribute the modified material.</br></sup>
--   No additional restrictions --- You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.</sup>
+<sup>Under the following terms:</br></sup>
+<sup>-   Attribution --- You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</br></sup>
+<sup>-   NonCommercial --- You may not use the material for commercial purposes.</br></sup>
+<sup>-   NoDerivatives --- If you remix, transform, or build upon the material, you may not distribute the modified material.</br></sup>
+<sup>-   No additional restrictions --- You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.</sup>
 
 <sup>Notices: You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation. No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.</sup>
