@@ -179,6 +179,19 @@ def main():
     
     thresh1 = (255*filter_entropy_image(ORO, thresh_localminimal)).astype('uint8')
     mask_255 = cv2.bitwise_not(deepcopy(thresh1))
+
+    redolbl = measure.label(np.array(mask_255),connectivity=2)
+    redprops = regionprops(redolbl)
+
+    redAreaData = []
+    for r in range(len(redprops)):
+        redAreaData.append(redprops[r].area)
+
+
+    max_value = max(redAreaData)
+    max_index = redAreaData.index(max_value)
+        
+    max_mask = (redolbl==(max_index+1))*255
     print("Writing entropy-based masked image at [",args.output_img,"].")
     
     # # FIX
@@ -196,7 +209,7 @@ def main():
     # else:
     #   print("Writing images for [",fname,"] at level [",level,"].")
     #   cv2.imwrite(str(fnameout).replace("!!",str(level)),cv2.cvtColor(img,cv2.COLOR_RGB2BGR))
-    cv2.imwrite(args.output_img, mask_255)
+    cv2.imwrite(args.output_img, max_mask)
 
 # start the main program
 if __name__ == "__main__":
